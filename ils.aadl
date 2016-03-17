@@ -1,0 +1,81 @@
+package ils
+
+
+-- This AADL model attempts to capture all relevant interface information 
+-- for an ILS (Instrument Landing System) receiver, as defined in the 
+-- ARINC 710-10 specification. The ultimate goal behind this model is to extract
+-- the Interface Control Document (ICD) for the ILS receiver.
+--
+-- All analog signals (electrical power, audio signals, ...) are modeled
+-- as feature groups, as there is no clear reason to model them as any kind of
+-- AADL port, the semantics don't fit.
+ 
+-- By Roger Champagne, P.Eng., Ph.D.
+-- ETS, Montreal
+-- 2106-Mar-11
+
+public
+	----------------------- Top-level feature groups (physical connectors)
+
+	-- TP connector - test
+	feature group tp_fg
+	end tp_fg;
+
+	-- MP connector - main
+	feature group mp_fg
+		features
+			-- Open questions:
+			--   - Need to go down to pin level?
+			--   - Need to create feature group for FFSS?
+			--   - Check direction of all ports, some are not clear to me
+			
+			audioDistributionSystem: out feature group; -- MP1A, MP1B
+			tuneFuncTestInhibit: in data port; -- MP1C
+			funcTestInput: in data port; -- MP1D
+			locGsInterrupt: feature group; -- MP3A, MP3B
+			A429_out_1: out feature group; -- MP7B, MP7C
+			A429_in_1: in feature group; -- MP9B, MP9C
+			A429_out_2: out feature group; -- MP11B, MP11C
+			freqFuncDataSourceSelect: in data port; -- MP13A
+			A429_in_2: in feature group; -- MP13B, MP13C
+			SDI: feature group sdi_fg;
+			controlPanelSpare: feature group control_panel_spare_fg;
+			airGroundLogic: in data port; -- MP15D
+	end mp_fg;
+
+	-- BP connector - analog (power, antennas)
+	feature group bp_fg
+		features
+			bp1: in feature group; -- Localizer antenna
+			bp2: in feature group; -- 115 VAC Hot
+			bp3: in feature group; -- 115 VAC Cold
+			bp4: in feature group; -- Airframe DC ground
+			bp5: in feature group; -- Glide slope antenna
+	end bp_fg;
+
+	-------------------------------------------------- Other feature groups
+	feature group sdi_fg
+		features
+			sdi_in_1: feature group; -- MP7A
+			sdi_in_2: feature group; -- MP9A
+			sdi_in_common: feature group; -- MP11A
+	end sdi_fg;
+
+	feature group control_panel_spare_fg
+		features
+			suggestedSpare_1: feature group; -- MP3D
+			suggestedSpare_2: feature group; -- MP5D
+			controlPanelPower: out feature group; -- MP15B, MP15C
+	end control_panel_spare_fg;
+
+	------------------------------------------------------- Main system type	
+	system ils
+		features
+			TP: feature group tp_fg;
+			MP: feature group mp_fg;
+			BP: feature group bp_fg;
+		properties
+			none;
+	end ils;
+
+end ils;
