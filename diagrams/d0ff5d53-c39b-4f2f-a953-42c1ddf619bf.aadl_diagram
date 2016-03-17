@@ -1,0 +1,1422 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pi:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" visible="true" gridUnit="10" diagramTypeId="AADL Diagram" name="ils::ils" snapToGrid="true" version="0.12.0">
+  <properties key="independentObject" value="classifier ils::ils"/>
+  <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier ils::ils"/>
+    <properties key="is_ghost" value="false"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" filled="false" width="300" height="1140" x="20" y="20" style="//@styles.2/@styles.1" cornerHeight="25" cornerWidth="25"/>
+    <anchors xsi:type="pi:ChopboxAnchor">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="independentObject" value="feature ils::ils.TP"/>
+      <properties key="is_ghost" value="false"/>
+      <properties key="is_coloring_container" value="true"/>
+      <properties key="side" value="left"/>
+      <properties key="is_layed_out" value="true"/>
+      <properties key="layout_side" value="left"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="30" height="41" y="20"/>
+      <anchors xsi:type="pi:ChopboxAnchor">
+        <properties key="name" value="chopbox"/>
+      </anchors>
+      <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <properties key="name" value="innerConnector"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+        <location x="30" y="28"/>
+      </anchors>
+      <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <properties key="name" value="outerConnector"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+        <location y="28"/>
+      </anchors>
+      <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <properties key="name" value="flowSpecification"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+        <location x="80" y="28"/>
+      </anchors>
+      <children xsi:type="pi:ContainerShape" visible="true" active="true">
+        <properties key="name" value="feature"/>
+        <properties key="is_inner_shape" value="true"/>
+        <properties key="is_coloring_child" value="true"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+          <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+          <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+        </graphicsAlgorithm>
+        <anchors xsi:type="pi:ChopboxAnchor">
+          <properties key="name" value="chopbox"/>
+        </anchors>
+      </children>
+      <children visible="true">
+        <properties key="is_manually_positioned" value="true"/>
+        <properties key="independentObject" value="feature ils::ils.TP"/>
+        <properties key="name" value="label"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="18" height="16" x="5" style="//@styles.0">
+          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="18" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="TP"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="is_manually_positioned" value="true"/>
+        <properties key="independentObject" value="feature ils::ils.TP"/>
+        <properties key="name" value="annotation"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+        </graphicsAlgorithm>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="independentObject" value="feature ils::ils.MP"/>
+      <properties key="is_ghost" value="false"/>
+      <properties key="is_coloring_container" value="true"/>
+      <properties key="side" value="left"/>
+      <properties key="is_layed_out" value="true"/>
+      <properties key="layout_side" value="left"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="215" height="809" y="20"/>
+      <anchors xsi:type="pi:ChopboxAnchor">
+        <properties key="name" value="chopbox"/>
+      </anchors>
+      <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <properties key="name" value="innerConnector"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+        <location x="30" y="412"/>
+      </anchors>
+      <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <properties key="name" value="outerConnector"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+        <location y="412"/>
+      </anchors>
+      <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <properties key="name" value="flowSpecification"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+        <location x="80" y="412"/>
+      </anchors>
+      <children xsi:type="pi:ContainerShape" visible="true" active="true">
+        <properties key="name" value="feature"/>
+        <properties key="is_inner_shape" value="true"/>
+        <properties key="is_coloring_child" value="true"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="215" height="793" y="16">
+          <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="386" style="//@styles.2/@styles.0"/>
+          <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="793" x="20" style="//@styles.2/@styles.0"/>
+        </graphicsAlgorithm>
+        <anchors xsi:type="pi:ChopboxAnchor">
+          <properties key="name" value="chopbox"/>
+        </anchors>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.tuneFuncTestInhibit"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="137" height="26" x="30"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="15" y="21"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="21"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="65" y="21"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="15" height="10" y="16" style="//@styles.4">
+              <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="15" height="10" style="//@styles.4">
+                <points/>
+                <points x="15" y="5"/>
+                <points y="10"/>
+              </graphicsAlgorithmChildren>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.tuneFuncTestInhibit"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="132" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="132" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="tuneFuncTestInhibit"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.tuneFuncTestInhibit"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.funcTestInput"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="95" height="26" x="30" y="31"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="15" y="21"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="21"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="65" y="21"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="15" height="10" y="16" style="//@styles.4">
+              <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="15" height="10" style="//@styles.4">
+                <points/>
+                <points x="15" y="5"/>
+                <points y="10"/>
+              </graphicsAlgorithmChildren>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.funcTestInput"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="90" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="90" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="funcTestInput"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.funcTestInput"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.freqFuncDataSourceSelect"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="185" height="26" x="30" y="62"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="15" y="21"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="21"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="65" y="21"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="15" height="10" y="16" style="//@styles.4">
+              <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="15" height="10" style="//@styles.4">
+                <points/>
+                <points x="15" y="5"/>
+                <points y="10"/>
+              </graphicsAlgorithmChildren>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.freqFuncDataSourceSelect"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="180" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="180" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="freqFuncDataSourceSelect"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.freqFuncDataSourceSelect"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.airGroundLogic"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="109" height="26" x="30" y="93"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="15" y="21"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="21"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="65" y="21"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="15" height="10" y="16" style="//@styles.4">
+              <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="15" height="10" style="//@styles.4">
+                <points/>
+                <points x="15" y="5"/>
+                <points y="10"/>
+              </graphicsAlgorithmChildren>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.airGroundLogic"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="104" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="104" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="airGroundLogic"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.airGroundLogic"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.audioDistributionSystem"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="168" height="41" x="30" y="124"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.audioDistributionSystem"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="163" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="163" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="audioDistributionSystem"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.audioDistributionSystem"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.locGsInterrupt"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="99" height="41" x="30" y="170"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.locGsInterrupt"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="94" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="94" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="locGsInterrupt"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.locGsInterrupt"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.A429_out_1"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="80" height="41" x="30" y="216"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.A429_out_1"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="75" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="75" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="A429_out_1"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.A429_out_1"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.A429_in_1"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="71" height="41" x="30" y="262"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.A429_in_1"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="66" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="66" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="A429_in_1"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.A429_in_1"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.A429_out_2"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="80" height="41" x="30" y="308"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.A429_out_2"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="75" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="75" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="A429_out_2"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.A429_out_2"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.A429_in_2"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="71" height="41" x="30" y="354"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.A429_in_2"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="66" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="66" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="A429_in_2"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.A429_in_2"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.SDI"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="139" height="179" x="30" y="400"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="97"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="97"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="97"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="139" height="163" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="71" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="163" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+            <children xsi:type="pi:ContainerShape" visible="true" active="true">
+              <properties key="independentObject" value="feature ils::sdi_fg.sdi_in_1"/>
+              <properties key="is_ghost" value="false"/>
+              <properties key="is_coloring_container" value="true"/>
+              <properties key="layout_side" value="left"/>
+              <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="59" height="41" x="30"/>
+              <anchors xsi:type="pi:ChopboxAnchor">
+                <properties key="name" value="chopbox"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="innerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="30" y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="outerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="flowSpecification"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="80" y="28"/>
+              </anchors>
+              <children xsi:type="pi:ContainerShape" visible="true" active="true">
+                <properties key="name" value="feature"/>
+                <properties key="is_inner_shape" value="true"/>
+                <properties key="is_coloring_child" value="true"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+                  <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+                  <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+                </graphicsAlgorithm>
+                <anchors xsi:type="pi:ChopboxAnchor">
+                  <properties key="name" value="chopbox"/>
+                </anchors>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::sdi_fg.sdi_in_1"/>
+                <properties key="name" value="label"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="54" height="16" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="54" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="sdi_in_1"/>
+                </graphicsAlgorithm>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::sdi_fg.sdi_in_1"/>
+                <properties key="name" value="annotation"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+                </graphicsAlgorithm>
+              </children>
+            </children>
+            <children xsi:type="pi:ContainerShape" visible="true" active="true">
+              <properties key="independentObject" value="feature ils::sdi_fg.sdi_in_2"/>
+              <properties key="is_ghost" value="false"/>
+              <properties key="is_coloring_container" value="true"/>
+              <properties key="layout_side" value="left"/>
+              <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="59" height="41" x="30" y="46"/>
+              <anchors xsi:type="pi:ChopboxAnchor">
+                <properties key="name" value="chopbox"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="innerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="30" y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="outerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="flowSpecification"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="80" y="28"/>
+              </anchors>
+              <children xsi:type="pi:ContainerShape" visible="true" active="true">
+                <properties key="name" value="feature"/>
+                <properties key="is_inner_shape" value="true"/>
+                <properties key="is_coloring_child" value="true"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+                  <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+                  <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+                </graphicsAlgorithm>
+                <anchors xsi:type="pi:ChopboxAnchor">
+                  <properties key="name" value="chopbox"/>
+                </anchors>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::sdi_fg.sdi_in_2"/>
+                <properties key="name" value="label"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="54" height="16" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="54" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="sdi_in_2"/>
+                </graphicsAlgorithm>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::sdi_fg.sdi_in_2"/>
+                <properties key="name" value="annotation"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+                </graphicsAlgorithm>
+              </children>
+            </children>
+            <children xsi:type="pi:ContainerShape" visible="true" active="true">
+              <properties key="independentObject" value="feature ils::sdi_fg.sdi_in_common"/>
+              <properties key="is_ghost" value="false"/>
+              <properties key="is_coloring_container" value="true"/>
+              <properties key="layout_side" value="left"/>
+              <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="109" height="41" x="30" y="92"/>
+              <anchors xsi:type="pi:ChopboxAnchor">
+                <properties key="name" value="chopbox"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="innerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="30" y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="outerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="flowSpecification"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="80" y="28"/>
+              </anchors>
+              <children xsi:type="pi:ContainerShape" visible="true" active="true">
+                <properties key="name" value="feature"/>
+                <properties key="is_inner_shape" value="true"/>
+                <properties key="is_coloring_child" value="true"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+                  <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+                  <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+                </graphicsAlgorithm>
+                <anchors xsi:type="pi:ChopboxAnchor">
+                  <properties key="name" value="chopbox"/>
+                </anchors>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::sdi_fg.sdi_in_common"/>
+                <properties key="name" value="label"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="104" height="16" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="104" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="sdi_in_common"/>
+                </graphicsAlgorithm>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::sdi_fg.sdi_in_common"/>
+                <properties key="name" value="annotation"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+                </graphicsAlgorithm>
+              </children>
+            </children>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.SDI"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="23" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="23" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="SDI"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.SDI"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::mp_fg.controlPanelSpare"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="164" height="179" x="30" y="584"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="97"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="97"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="97"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="164" height="163" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="71" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="163" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+            <children xsi:type="pi:ContainerShape" visible="true" active="true">
+              <properties key="independentObject" value="feature ils::control_panel_spare_fg.suggestedSpare_1"/>
+              <properties key="is_ghost" value="false"/>
+              <properties key="is_coloring_container" value="true"/>
+              <properties key="layout_side" value="left"/>
+              <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="127" height="41" x="30"/>
+              <anchors xsi:type="pi:ChopboxAnchor">
+                <properties key="name" value="chopbox"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="innerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="30" y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="outerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="flowSpecification"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="80" y="28"/>
+              </anchors>
+              <children xsi:type="pi:ContainerShape" visible="true" active="true">
+                <properties key="name" value="feature"/>
+                <properties key="is_inner_shape" value="true"/>
+                <properties key="is_coloring_child" value="true"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+                  <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+                  <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+                </graphicsAlgorithm>
+                <anchors xsi:type="pi:ChopboxAnchor">
+                  <properties key="name" value="chopbox"/>
+                </anchors>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::control_panel_spare_fg.suggestedSpare_1"/>
+                <properties key="name" value="label"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="122" height="16" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="122" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="suggestedSpare_1"/>
+                </graphicsAlgorithm>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::control_panel_spare_fg.suggestedSpare_1"/>
+                <properties key="name" value="annotation"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+                </graphicsAlgorithm>
+              </children>
+            </children>
+            <children xsi:type="pi:ContainerShape" visible="true" active="true">
+              <properties key="independentObject" value="feature ils::control_panel_spare_fg.suggestedSpare_2"/>
+              <properties key="is_ghost" value="false"/>
+              <properties key="is_coloring_container" value="true"/>
+              <properties key="layout_side" value="left"/>
+              <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="127" height="41" x="30" y="46"/>
+              <anchors xsi:type="pi:ChopboxAnchor">
+                <properties key="name" value="chopbox"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="innerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="30" y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="outerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="flowSpecification"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="80" y="28"/>
+              </anchors>
+              <children xsi:type="pi:ContainerShape" visible="true" active="true">
+                <properties key="name" value="feature"/>
+                <properties key="is_inner_shape" value="true"/>
+                <properties key="is_coloring_child" value="true"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+                  <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+                  <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+                </graphicsAlgorithm>
+                <anchors xsi:type="pi:ChopboxAnchor">
+                  <properties key="name" value="chopbox"/>
+                </anchors>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::control_panel_spare_fg.suggestedSpare_2"/>
+                <properties key="name" value="label"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="122" height="16" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="122" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="suggestedSpare_2"/>
+                </graphicsAlgorithm>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::control_panel_spare_fg.suggestedSpare_2"/>
+                <properties key="name" value="annotation"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+                </graphicsAlgorithm>
+              </children>
+            </children>
+            <children xsi:type="pi:ContainerShape" visible="true" active="true">
+              <properties key="independentObject" value="feature ils::control_panel_spare_fg.controlPanelPower"/>
+              <properties key="is_ghost" value="false"/>
+              <properties key="is_coloring_container" value="true"/>
+              <properties key="layout_side" value="left"/>
+              <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="134" height="41" x="30" y="92"/>
+              <anchors xsi:type="pi:ChopboxAnchor">
+                <properties key="name" value="chopbox"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="innerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="30" y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="outerConnector"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location y="28"/>
+              </anchors>
+              <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+                <properties key="name" value="flowSpecification"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+                <location x="80" y="28"/>
+              </anchors>
+              <children xsi:type="pi:ContainerShape" visible="true" active="true">
+                <properties key="name" value="feature"/>
+                <properties key="is_inner_shape" value="true"/>
+                <properties key="is_coloring_child" value="true"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+                  <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+                  <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+                </graphicsAlgorithm>
+                <anchors xsi:type="pi:ChopboxAnchor">
+                  <properties key="name" value="chopbox"/>
+                </anchors>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::control_panel_spare_fg.controlPanelPower"/>
+                <properties key="name" value="label"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="129" height="16" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="129" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="controlPanelPower"/>
+                </graphicsAlgorithm>
+              </children>
+              <children visible="true">
+                <properties key="is_manually_positioned" value="true"/>
+                <properties key="independentObject" value="feature ils::control_panel_spare_fg.controlPanelPower"/>
+                <properties key="name" value="annotation"/>
+                <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+                  <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+                </graphicsAlgorithm>
+              </children>
+            </children>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.controlPanelSpare"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="126" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="126" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="controlPanelSpare"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::mp_fg.controlPanelSpare"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+      </children>
+      <children visible="true">
+        <properties key="is_manually_positioned" value="true"/>
+        <properties key="independentObject" value="feature ils::ils.MP"/>
+        <properties key="name" value="label"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="21" height="16" x="5" style="//@styles.0">
+          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="21" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="MP"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="is_manually_positioned" value="true"/>
+        <properties key="independentObject" value="feature ils::ils.MP"/>
+        <properties key="name" value="annotation"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+        </graphicsAlgorithm>
+      </children>
+    </children>
+    <children xsi:type="pi:ContainerShape" visible="true" active="true">
+      <properties key="independentObject" value="feature ils::ils.BP"/>
+      <properties key="is_ghost" value="false"/>
+      <properties key="is_coloring_container" value="true"/>
+      <properties key="side" value="left"/>
+      <properties key="is_layed_out" value="true"/>
+      <properties key="layout_side" value="left"/>
+      <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="60" height="271" y="849"/>
+      <anchors xsi:type="pi:ChopboxAnchor">
+        <properties key="name" value="chopbox"/>
+      </anchors>
+      <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <properties key="name" value="innerConnector"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+        <location x="30" y="143"/>
+      </anchors>
+      <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <properties key="name" value="outerConnector"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+        <location y="143"/>
+      </anchors>
+      <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+        <properties key="name" value="flowSpecification"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+        <location x="80" y="143"/>
+      </anchors>
+      <children xsi:type="pi:ContainerShape" visible="true" active="true">
+        <properties key="name" value="feature"/>
+        <properties key="is_inner_shape" value="true"/>
+        <properties key="is_coloring_child" value="true"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="60" height="255" y="16">
+          <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="117" style="//@styles.2/@styles.0"/>
+          <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="255" x="20" style="//@styles.2/@styles.0"/>
+        </graphicsAlgorithm>
+        <anchors xsi:type="pi:ChopboxAnchor">
+          <properties key="name" value="chopbox"/>
+        </anchors>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::bp_fg.bp1"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="30" height="41" x="30"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::bp_fg.bp1"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="24" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="24" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="bp1"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::bp_fg.bp1"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::bp_fg.bp2"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="30" height="41" x="30" y="46"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::bp_fg.bp2"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="24" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="24" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="bp2"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::bp_fg.bp2"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::bp_fg.bp3"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="30" height="41" x="30" y="92"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::bp_fg.bp3"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="24" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="24" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="bp3"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::bp_fg.bp3"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::bp_fg.bp4"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="30" height="41" x="30" y="138"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::bp_fg.bp4"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="24" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="24" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="bp4"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::bp_fg.bp4"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+        <children xsi:type="pi:ContainerShape" visible="true" active="true">
+          <properties key="independentObject" value="feature ils::bp_fg.bp5"/>
+          <properties key="is_ghost" value="false"/>
+          <properties key="is_coloring_container" value="true"/>
+          <properties key="layout_side" value="left"/>
+          <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0" width="30" height="41" x="30" y="184"/>
+          <anchors xsi:type="pi:ChopboxAnchor">
+            <properties key="name" value="chopbox"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="innerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="30" y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="outerConnector"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location y="28"/>
+          </anchors>
+          <anchors xsi:type="pi:FixPointAnchor" visible="true" active="true" useAnchorLocationAsConnectionEndpoint="true">
+            <properties key="name" value="flowSpecification"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineWidth="1" filled="false" lineVisible="false" transparency="0.0"/>
+            <location x="80" y="28"/>
+          </anchors>
+          <children xsi:type="pi:ContainerShape" visible="true" active="true">
+            <properties key="name" value="feature"/>
+            <properties key="is_inner_shape" value="true"/>
+            <properties key="is_coloring_child" value="true"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" filled="false" lineVisible="false" width="30" height="25" y="16">
+              <graphicsAlgorithmChildren xsi:type="al:Ellipse" lineStyle="UNSPECIFIED" width="20" height="20" y="2" style="//@styles.2/@styles.0"/>
+              <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="10" height="25" x="20" style="//@styles.2/@styles.0"/>
+            </graphicsAlgorithm>
+            <anchors xsi:type="pi:ChopboxAnchor">
+              <properties key="name" value="chopbox"/>
+            </anchors>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::bp_fg.bp5"/>
+            <properties key="name" value="label"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="24" height="16" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="24" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="bp5"/>
+            </graphicsAlgorithm>
+          </children>
+          <children visible="true">
+            <properties key="is_manually_positioned" value="true"/>
+            <properties key="independentObject" value="feature ils::bp_fg.bp5"/>
+            <properties key="name" value="annotation"/>
+            <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+              <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+            </graphicsAlgorithm>
+          </children>
+        </children>
+      </children>
+      <children visible="true">
+        <properties key="is_manually_positioned" value="true"/>
+        <properties key="independentObject" value="feature ils::ils.BP"/>
+        <properties key="name" value="label"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="19" height="16" x="5" style="//@styles.0">
+          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" width="19" height="16" style="//@styles.1" verticalAlignment="UNSPECIFIED" value="BP"/>
+        </graphicsAlgorithm>
+      </children>
+      <children visible="true">
+        <properties key="is_manually_positioned" value="true"/>
+        <properties key="independentObject" value="feature ils::ils.BP"/>
+        <properties key="name" value="annotation"/>
+        <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" x="5" style="//@styles.0">
+          <graphicsAlgorithmChildren xsi:type="al:Text" lineStyle="UNSPECIFIED" style="//@styles.3" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value=""/>
+        </graphicsAlgorithm>
+      </children>
+    </children>
+  </children>
+  <styles background="//@colors.1" lineStyle="UNSPECIFIED" filled="true" lineVisible="false" transparency="0.2" id="text-background" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+  <styles foreground="//@colors.2" lineStyle="UNSPECIFIED" filled="false" id="label" font="//@fonts.0"/>
+  <styles background="//@colors.1" foreground="//@colors.2" lineWidth="1" lineVisible="true" transparency="0.0" id="classifier" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
+    <styles background="//@colors.2" lineStyle="UNSPECIFIED" id="feature-group" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+    <styles lineWidth="2" lineStyle="UNSPECIFIED" id="system" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+  </styles>
+  <styles foreground="//@colors.2" lineStyle="UNSPECIFIED" filled="false" id="annotation" font="//@fonts.0"/>
+  <styles background="//@colors.2" foreground="//@colors.2" lineWidth="2" lineVisible="true" id="feature" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+  <colors red="227" green="238" blue="249"/>
+  <colors red="255" green="255" blue="255"/>
+  <colors/>
+  <fonts name="Arial" size="10" bold="true"/>
+</pi:Diagram>
