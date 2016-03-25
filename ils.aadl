@@ -1,46 +1,46 @@
 package ils
 
-
 -- This AADL model attempts to capture all relevant interface information 
--- for an ILS (Instrument Landing System) receiver, as defined in the 
--- ARINC 710-10 specification. The ultimate goal behind this model is to extract
--- the Interface Control Document (ICD) for the ILS receiver.
---
--- All analog signals (electrical power, audio signals, ...) are modeled
--- as feature groups, as there is no clear reason to model them as any kind of
--- AADL port, the semantics don't fit.
- 
--- By Roger Champagne, P.Eng., Ph.D.
--- ETS, Montreal
--- 2106-Mar-11
+	-- for an ILS (Instrument Landing System) receiver, as defined in the 
+	-- ARINC 710-10 specification. The ultimate goal behind this model is to extract
+	-- the Interface Control Document (ICD) for the ILS receiver.
+	--
+	-- All analog signals (electrical power, audio signals, ...) are modeled
+	-- as feature groups, as there is no clear reason to model them as any kind of
+	-- AADL port, the semantics don't fit.
+
+	-- By Roger Champagne, P.Eng., Ph.D.
+	-- ETS, Montreal
+	-- 2106-Mar-11
 
 public
-	----------------------- Top-level feature groups (physical connectors)
 
-	-- TP connector - test
+----------------------- Top-level feature groups (physical connectors)
+
+-- TP connector - test
 	feature group tp_fg
 	end tp_fg;
 
 	-- MP connector - main
 	feature group mp_fg
 		features
-			-- Open questions:
-			--   - Need to go down to pin level?
-			--   - Need to create feature group for FFSS?
-			--   - Check direction of all ports, some are not clear to me
-			
+		-- Open questions:
+		--   - Need to go down to pin level?
+		--   - Need to create feature group for FFSS?
+		--   - Check direction of all ports, some are not clear to me
 			audioDistributionSystem: out feature group; -- MP1A, MP1B
 			tuneFuncTestInhibit: in data port; -- MP1C
 			funcTestInput: in data port; -- MP1D
-			locGsInterrupt: feature group; -- MP3A, MP3B
-			A429_out_1: out feature group; -- MP7B, MP7C
-			A429_in_1: in feature group; -- MP9B, MP9C
-			A429_out_2: out feature group; -- MP11B, MP11C
+			locGsInterrupt: feature group; -- MP3A, MP3B -- I think it is an input port
+			A429_out_1: out feature group; -- MP7B, MP7C  to AFCS
+			A429_in_1: in feature group; -- MP9B, MP9C  from freq function selection system
+			A429_out_2: out feature group; -- MP11B, MP11C to data utilisation device
 			freqFuncDataSourceSelect: in data port; -- MP13A
-			A429_in_2: in feature group; -- MP13B, MP13C
+			A429_in_2: in feature group; -- MP13B, MP13C from freq function select data
 			SDI: feature group sdi_fg;
 			controlPanelSpare: feature group control_panel_spare_fg;
 			airGroundLogic: in data port; -- MP15D
+
 	end mp_fg;
 
 	-- BP connector - analog (power, antennas)
@@ -51,6 +51,7 @@ public
 			bp3: in feature group; -- 115 VAC Cold
 			bp4: in feature group; -- Airframe DC ground
 			bp5: in feature group; -- Glide slope antenna
+
 	end bp_fg;
 
 	-------------------------------------------------- Other feature groups
@@ -59,6 +60,7 @@ public
 			sdi_in_1: feature group; -- MP7A
 			sdi_in_2: feature group; -- MP9A
 			sdi_in_common: feature group; -- MP11A
+
 	end sdi_fg;
 
 	feature group control_panel_spare_fg
@@ -66,7 +68,64 @@ public
 			suggestedSpare_1: feature group; -- MP3D
 			suggestedSpare_2: feature group; -- MP5D
 			controlPanelPower: out feature group; -- MP15B, MP15C
+
 	end control_panel_spare_fg;
+
+	-- rim modif 2016-Mars-25 add input and output data 
+	---------------------------------------------------
+	---------------        Data     -------------------
+	---------------------------------------------------
+
+	------------------ output data
+	data localizer_data
+	end localizer_data;
+
+	data glide_slope_deviation
+	end glide_slope_deviation;
+
+	data ils_frequency
+	end ils_frequency;
+
+	data ils_ground_station_ident
+	end ils_ground_station_ident;
+
+	------------------ input data
+	-- not sure about the input data
+	data loc_signal -- localizer signal data coming from the localizer antenna
+
+	end loc_signal;
+
+	data glide_slope_signal -- glide slope signal data coming from the glide slope antenna  
+
+	end glide_slope_signal;
+
+	data frequency_data -- frequency data coming from the AFCS
+
+	end frequency_data;
+
+	-------------------- Buses 
+	bus busA429_out_1
+	end busA429_out_1;
+
+	bus busA429_out_2
+	end busA429_out_2;
+
+	bus busA429_in_1
+	end busA429_in_1;
+
+	bus busA429_in_2
+	end busA429_in_2;
+
+	processor ils_processor
+		features
+			BA1: requires bus access busA429_out_1;
+			BA2: requires bus access busA429_out_2;
+			BA3: requires bus access busA429_in_1;
+			BA4: requires bus access busA429_in_2;
+	end ils_processor;
+
+	processor implementation ils_processor.impl
+	end ils_processor.impl;
 
 	------------------------------------------------------- Main system type	
 	system ils
@@ -77,5 +136,67 @@ public
 		properties
 			none;
 	end ils;
+
+	-- rim modif 2016-Mars-25 
+	-- add Main system implementation
+	------------------------------------------------------ Main system implementation
+	system implementation ils.impl
+		subcomponents
+			ils_process: process ils_process.impl;
+			busA429_out_1: bus busA429_out_1;
+			busA429_out_2: bus busA429_out_2;
+			busA429_in_1: bus busA429_in_1;
+			busA429_in_2: bus busA429_in_2;
+			micro_processor: processor ils_processor.impl;
+	end ils.impl;
+
+	--------------------------------------
+	----------------- Process and thread
+	--------------------------------------
+	thread frequency_selection
+		features
+			frequency_data_input: in data port;
+			frequency_data_output: out data port;
+	end frequency_selection;
+
+	thread implementation frequency_selection.impl
+	end frequency_selection.impl;
+
+	thread providing_deviation_data
+		features
+			loc_signal_input: in data port; -- localizer signal input
+			glide_signal_input: in data port; -- glide slope signal input
+			loc_data_output: out data port; -- localizer signal output
+			glide_data_output: out data port; -- glide slope signal output
+
+	end providing_deviation_data;
+
+	thread implementation providing_deviation_data.impl
+	end providing_deviation_data.impl;
+
+	process ils_process
+		features
+			frequency_data_input: in data port; -- frequency data port
+			loc_signal_input: in data port; -- localizer signal input
+			glide_signal_input: in data port; -- glide slope signal input
+			frequency_data_output: out data port; --
+			loc_data_output: out data port; --
+			glide_data_output: out data port; --
+
+
+	end ils_process;
+
+	process implementation ils_process.impl
+		subcomponents
+			frequency_selection: thread frequency_selection.impl;
+			providing_deviation_data: thread providing_deviation_data.impl;
+
+		connections
+			DC1: port frequency_data_input -> frequency_selection.frequency_data_input;
+			DC2: port loc_signal_input -> providing_deviation_data.loc_signal_input;
+			DC3: port frequency_selection.frequency_data_output -> frequency_data_output;
+			DC4: port providing_deviation_data.loc_data_output -> loc_data_output;
+
+	end ils_process.impl;
 
 end ils;
