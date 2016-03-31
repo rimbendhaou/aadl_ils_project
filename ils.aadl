@@ -33,11 +33,11 @@ public
 			tuneFuncTestInhibit: in data port; -- MP1C
 			funcTestInput: in data port; -- MP1D
 			locGsInterrupt: feature group; -- MP3A, MP3B -- I think it is an input port
-			A429_out_1: out feature group; -- MP7B, MP7C  to AFCS
-			A429_in_1: in feature group; -- MP9B, MP9C  from freq function selection system
-			A429_out_2: out feature group; -- MP11B, MP11C to data utilisation device
+			A429_out_1: out feature group fg_out_bus1; -- MP7B, MP7C  to AFCS
+			A429_in_1: in feature group fg_in_bus1; -- MP9B, MP9C  from freq function selection system
+			A429_out_2: out feature group fg_out_bus2; -- MP11B, MP11C to data utilisation device
 			freqFuncDataSourceSelect: in data port; -- MP13A
-			A429_in_2: in feature group; -- MP13B, MP13C from freq function select data
+			A429_in_2: in feature group fg_in_bus2; -- MP13B, MP13C from freq function select data
 			SDI: feature group sdi_fg;
 			controlPanelSpare: feature group control_panel_spare_fg;
 			airGroundLogic: in data port; -- MP15D
@@ -72,6 +72,27 @@ public
 
 	end control_panel_spare_fg;
 
+
+    -- rim modif feature groups bus requirements
+    feature group fg_out_bus1
+    	features
+    	bus1: provides bus access busA429_out_1;
+    end fg_out_bus1;
+    
+    feature group fg_out_bus2
+    	features
+    	bus2: provides bus access busA429_out_2;
+    end fg_out_bus2;
+    
+    feature group fg_in_bus1
+    	features
+    	bus1: requires bus access busA429_in_1;
+    end fg_in_bus1;
+    
+    feature group fg_in_bus2
+    	features
+    	bus2: requires bus access busA429_in_2;
+    end fg_in_bus2;
 	-- rim modif 2016-Mars-25 add ils input and output data words
 	---------------------------------------------------
 	---------------        Data     -------------------
@@ -105,18 +126,8 @@ public
 
 	bus busA429_in_2
 	end busA429_in_2;
-
-	processor ils_processor
-		features
-			BA1: requires bus access busA429_out_1;
-			BA2: requires bus access busA429_out_2;
-			BA3: requires bus access busA429_in_1;
-			BA4: requires bus access busA429_in_2;
-	end ils_processor;
-
-	processor implementation ils_processor.impl
-	end ils_processor.impl;
-
+	
+	
 	------------------------------------------------------- Main system type	
 	system ils
 		features
@@ -169,10 +180,7 @@ public
 	system implementation ils.impl
 		subcomponents
 			ils_process: process ils_process.impl;
-			busA429_out_1: bus busA429_out_1;
-			busA429_out_2: bus busA429_out_2;
-			busA429_in_1: bus busA429_in_1;
-			busA429_in_2: bus busA429_in_2;
+			
 			--micro_processor: processor ils_processor.impl;
 		connections
 			-- frequency selection connections
