@@ -1,5 +1,6 @@
 package ils
 
+
 -- This AADL model attempts to capture all relevant interface information 
 	-- for an ILS (Instrument Landing System) receiver, as defined in the 
 	-- ARINC 710-10 specification. The ultimate goal behind this model is to extract
@@ -71,38 +72,27 @@ public
 
 	end control_panel_spare_fg;
 
-	-- rim modif 2016-Mars-25 add input and output data 
+	-- rim modif 2016-Mars-25 add ils input and output data words
 	---------------------------------------------------
 	---------------        Data     -------------------
 	---------------------------------------------------
 
-	------------------ output data
-	data localizer_data
-	end localizer_data;
+	data localizer_deviation --input and outpout data word
+	end localizer_deviation;
 
-	data glide_slope_deviation
+	data glide_slope_deviation --input and outpout data word
 	end glide_slope_deviation;
 
-	data ils_frequency
-	end ils_frequency;
+	data frequency_gfunction_control --input and outpout data word
+	end frequency_gfunction_control;
+	
+	data runway_heading --input and outpout data word
+	end runway_heading;
 
-	data ils_ground_station_ident
+	data ils_ground_station_ident -- outpout data word
 	end ils_ground_station_ident;
 
-	------------------ input data
-	-- not sure about the input data
-	data loc_signal -- localizer signal data coming from the localizer antenna
-
-	end loc_signal;
-
-	data glide_slope_signal -- glide slope signal data coming from the glide slope antenna  
-
-	end glide_slope_signal;
-
-	data frequency_data -- frequency data coming from the AFCS
-
-	end frequency_data;
-
+	
 	-------------------- Buses 
 	bus busA429_out_1
 	end busA429_out_1;
@@ -138,6 +128,42 @@ public
 	end ils;
 
 	-- rim modif 2016-Mars-25 
+	--------------------------------------
+	----------------- Process
+	--------------------------------------
+	process ils_process
+		features
+			frequency_data_input_portA: in feature group; 
+			frequency_data_input_portB: in feature group;
+			loc_signal_input: in feature group; 
+			glide_signal_input: in feature group; 
+			frequency_data_output_port1: out feature group; 
+			frequency_data_output_port2: out feature group;
+			loc_data_output: out feature group; 
+			glide_data_output: out feature group; 
+
+
+	end ils_process;
+	
+	process implementation ils_process.impl
+		subcomponents
+			frequency_selection: thread frequency_selection.impl;
+			providing_deviation_data: thread providing_deviation_data.impl;
+
+		connections
+			DC1: feature group frequency_data_input_portA -> frequency_selection.frequency_data_input;
+			DC2: feature group frequency_data_input_portB -> frequency_selection.frequency_data_input;
+			DC3: feature group frequency_selection.frequency_data_output -> frequency_data_output_port1;
+			DC4: feature group frequency_selection.frequency_data_output -> frequency_data_output_port2;
+			
+			DC5: feature group loc_signal_input -> providing_deviation_data.loc_signal_input;
+			DC6: feature group providing_deviation_data.loc_data_output -> loc_data_output;
+			
+			DC7: feature group glide_signal_input  -> providing_deviation_data.glide_signal_input;
+			DC8: feature group providing_deviation_data.glide_data_output -> glide_data_output;
+
+	end ils_process.impl;
+	
 	-- add Main system implementation
 	------------------------------------------------------ Main system implementation
 	system implementation ils.impl
@@ -147,16 +173,28 @@ public
 			busA429_out_2: bus busA429_out_2;
 			busA429_in_1: bus busA429_in_1;
 			busA429_in_2: bus busA429_in_2;
-			micro_processor: processor ils_processor.impl;
+			--micro_processor: processor ils_processor.impl;
+		connections
+			-- frequency selection connections
+			c0 : feature group MP.A429_in_1 -> ils_process.frequency_data_input_portA;
+			c1 : feature group MP.A429_in_2 -> ils_process.frequency_data_input_portB;
+			c2 : feature group ils_process.frequency_data_output_port1 ->  MP.A429_out_1;
+			c3 : feature group ils_process.frequency_data_output_port2 ->  MP.A429_out_2;
+			-- localizer connection
+			c4 : feature group BP.bp1 -> ils_process.loc_signal_input;
+			c5: feature group ils_process.loc_data_output -> MP.A429_out_1;
+			--glide connection
+			c6 : feature group BP.bp5 -> ils_process.glide_signal_input;
+			c7 : feature group ils_process.glide_data_output -> MP.A429_out_1; 
 	end ils.impl;
 
 	--------------------------------------
-	----------------- Process and thread
+	----------------- thread
 	--------------------------------------
 	thread frequency_selection
 		features
-			frequency_data_input: in data port;
-			frequency_data_output: out data port;
+			frequency_data_input: in feature group;
+			frequency_data_output: out feature group;
 	end frequency_selection;
 
 	thread implementation frequency_selection.impl
@@ -164,39 +202,18 @@ public
 
 	thread providing_deviation_data
 		features
-			loc_signal_input: in data port; -- localizer signal input
-			glide_signal_input: in data port; -- glide slope signal input
-			loc_data_output: out data port; -- localizer signal output
-			glide_data_output: out data port; -- glide slope signal output
+			loc_signal_input: in feature group; -- localizer signal input
+			glide_signal_input: in feature group; -- glide slope signal input
+			loc_data_output: out feature group; -- localizer signal output
+			glide_data_output: out feature group; -- glide slope signal output
 
 	end providing_deviation_data;
 
 	thread implementation providing_deviation_data.impl
 	end providing_deviation_data.impl;
 
-	process ils_process
-		features
-			frequency_data_input: in data port; -- frequency data port
-			loc_signal_input: in data port; -- localizer signal input
-			glide_signal_input: in data port; -- glide slope signal input
-			frequency_data_output: out data port; --
-			loc_data_output: out data port; --
-			glide_data_output: out data port; --
+	
 
-
-	end ils_process;
-
-	process implementation ils_process.impl
-		subcomponents
-			frequency_selection: thread frequency_selection.impl;
-			providing_deviation_data: thread providing_deviation_data.impl;
-
-		connections
-			DC1: port frequency_data_input -> frequency_selection.frequency_data_input;
-			DC2: port loc_signal_input -> providing_deviation_data.loc_signal_input;
-			DC3: port frequency_selection.frequency_data_output -> frequency_data_output;
-			DC4: port providing_deviation_data.loc_data_output -> loc_data_output;
-
-	end ils_process.impl;
+	
 
 end ils;
