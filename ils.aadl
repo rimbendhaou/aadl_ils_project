@@ -1,6 +1,5 @@
 package ils
 
-
 -- This AADL model attempts to capture all relevant interface information 
 	-- for an ILS (Instrument Landing System) receiver, as defined in the 
 	-- ARINC 710-10 specification. The ultimate goal behind this model is to extract
@@ -72,48 +71,50 @@ public
 
 	end control_panel_spare_fg;
 
+	-- rim modif feature groups bus requirements
+	feature group fg_out_bus1
+		features
+			bus1: provides bus access busA429_out_1;
+	end fg_out_bus1;
 
-    -- rim modif feature groups bus requirements
-    feature group fg_out_bus1
-    	features
-    	bus1: provides bus access busA429_out_1;
-    end fg_out_bus1;
-    
-    feature group fg_out_bus2
-    	features
-    	bus2: provides bus access busA429_out_2;
-    end fg_out_bus2;
-    
-    feature group fg_in_bus1
-    	features
-    	bus1: requires bus access busA429_in_1;
-    end fg_in_bus1;
-    
-    feature group fg_in_bus2
-    	features
-    	bus2: requires bus access busA429_in_2;
-    end fg_in_bus2;
+	feature group fg_out_bus2
+		features
+			bus2: provides bus access busA429_out_2;
+	end fg_out_bus2;
+
+	feature group fg_in_bus1
+		features
+			bus1: requires bus access busA429_in_1;
+	end fg_in_bus1;
+
+	feature group fg_in_bus2
+		features
+			bus2: requires bus access busA429_in_2;
+	end fg_in_bus2;
 	-- rim modif 2016-Mars-25 add ils input and output data words
 	---------------------------------------------------
 	---------------        Data     -------------------
 	---------------------------------------------------
-
 	data localizer_deviation --input and outpout data word
+
 	end localizer_deviation;
 
 	data glide_slope_deviation --input and outpout data word
+
 	end glide_slope_deviation;
 
 	data frequency_gfunction_control --input and outpout data word
+
 	end frequency_gfunction_control;
-	
+
 	data runway_heading --input and outpout data word
+
 	end runway_heading;
 
 	data ils_ground_station_ident -- outpout data word
+
 	end ils_ground_station_ident;
 
-	
 	-------------------- Buses 
 	bus busA429_out_1
 	end busA429_out_1;
@@ -126,8 +127,7 @@ public
 
 	bus busA429_in_2
 	end busA429_in_2;
-	
-	
+
 	------------------------------------------------------- Main system type	
 	system ils
 		features
@@ -144,18 +144,17 @@ public
 	--------------------------------------
 	process ils_process
 		features
-			frequency_data_input_portA: in feature group; 
+			frequency_data_input_portA: in feature group;
 			frequency_data_input_portB: in feature group;
-			loc_signal_input: in feature group; 
-			glide_signal_input: in feature group; 
-			frequency_data_output_port1: out feature group; 
+			loc_signal_input: in feature group;
+			glide_signal_input: in feature group;
+			frequency_data_output_port1: out feature group;
 			frequency_data_output_port2: out feature group;
-			loc_data_output: out feature group; 
-			glide_data_output: out feature group; 
-
+			loc_data_output: out feature group;
+			glide_data_output: out feature group;
 
 	end ils_process;
-	
+
 	process implementation ils_process.impl
 		subcomponents
 			frequency_selection: thread frequency_selection.impl;
@@ -166,34 +165,35 @@ public
 			DC2: feature group frequency_data_input_portB -> frequency_selection.frequency_data_input;
 			DC3: feature group frequency_selection.frequency_data_output -> frequency_data_output_port1;
 			DC4: feature group frequency_selection.frequency_data_output -> frequency_data_output_port2;
-			
+
 			DC5: feature group loc_signal_input -> providing_deviation_data.loc_signal_input;
 			DC6: feature group providing_deviation_data.loc_data_output -> loc_data_output;
-			
-			DC7: feature group glide_signal_input  -> providing_deviation_data.glide_signal_input;
+
+			DC7: feature group glide_signal_input -> providing_deviation_data.glide_signal_input;
 			DC8: feature group providing_deviation_data.glide_data_output -> glide_data_output;
 
 	end ils_process.impl;
-	
+
 	-- add Main system implementation
 	------------------------------------------------------ Main system implementation
 	system implementation ils.impl
 		subcomponents
 			ils_process: process ils_process.impl;
-			
+
 			--micro_processor: processor ils_processor.impl;
+
 		connections
-			-- frequency selection connections
-			c0 : feature group MP.A429_in_1 -> ils_process.frequency_data_input_portA;
-			c1 : feature group MP.A429_in_2 -> ils_process.frequency_data_input_portB;
-			c2 : feature group ils_process.frequency_data_output_port1 ->  MP.A429_out_1;
-			c3 : feature group ils_process.frequency_data_output_port2 ->  MP.A429_out_2;
+		-- frequency selection connections
+			c0: feature group MP.A429_in_1 -> ils_process.frequency_data_input_portA;
+			c1: feature group MP.A429_in_2 -> ils_process.frequency_data_input_portB;
+			c2: feature group ils_process.frequency_data_output_port1 -> MP.A429_out_1;
+			c3: feature group ils_process.frequency_data_output_port2 -> MP.A429_out_2;
 			-- localizer connection
-			c4 : feature group BP.bp1 -> ils_process.loc_signal_input;
+			c4: feature group BP.bp1 -> ils_process.loc_signal_input;
 			c5: feature group ils_process.loc_data_output -> MP.A429_out_1;
 			--glide connection
-			c6 : feature group BP.bp5 -> ils_process.glide_signal_input;
-			c7 : feature group ils_process.glide_data_output -> MP.A429_out_1; 
+			c6: feature group BP.bp5 -> ils_process.glide_signal_input;
+			c7: feature group ils_process.glide_data_output -> MP.A429_out_1;
 	end ils.impl;
 
 	--------------------------------------
@@ -219,9 +219,5 @@ public
 
 	thread implementation providing_deviation_data.impl
 	end providing_deviation_data.impl;
-
-	
-
-	
 
 end ils;
